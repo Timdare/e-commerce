@@ -9,13 +9,11 @@ function App() {
   const [products, setProducts] = useState({"errorMessage": "", "data": []});
 
   React.useEffect( ()=> {
-
     const fetchData = async () => {
       const responseObject = await getCategories();
       setCategories(responseObject);
     }
     fetchData();
-
   }, []);
 
   const handleCategoryClick = id => {
