@@ -31,7 +31,8 @@ function App() {
     })
     
   }
-
+// This comment was edited from github website while taking pull lesson
+                               
   const renderProducts = () => {
     return products.data.map(product => {
       return <div key={product.id}>{product.title}</div>
